@@ -12,7 +12,7 @@ import ru.nifontbus.testjwt.service.AuthService
 @RestController
 @RequestMapping("api")
 
-class Controller(
+class UserController(
 	private val authService: AuthService
 ) {
 

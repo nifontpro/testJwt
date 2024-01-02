@@ -6,8 +6,9 @@ import ru.nifontbus.testjwt.model.User
 
 @Service
 class UserService {
+
 	private val users = listOf(
-		User("anton", "1234", "Антон", "Иванов", setOf(Role.USER)),
+		User("anton", "1234", "Антон", "Иванов", setOf(Role.USER, Role.ADMIN)),
 		User("ivan", "12345", "Сергей", "Петров", setOf(Role.ADMIN))
 	)
 

@@ -1,13 +1,13 @@
 package ru.nifontbus.testjwt.service
 
 import io.jsonwebtoken.Claims
+import jakarta.security.auth.message.AuthException
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.stereotype.Service
 import ru.nifontbus.testjwt.jwt.JwtAuthentication
 import ru.nifontbus.testjwt.model.JwtRequest
 import ru.nifontbus.testjwt.model.JwtResponse
 import ru.nifontbus.testjwt.model.User
-import javax.security.auth.message.AuthException
 
 @Service
 class AuthService(
